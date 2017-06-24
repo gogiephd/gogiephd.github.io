@@ -1,3 +1,151 @@
-.topnav{
-	font-family: tangerine
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font: 1em 'Roboto', sans-serif;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(images/banner.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+header {
+  min-height: 600px;
+}
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+
+ul a {
+  display: block;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background: #eee;
+}
+
+nav li {
+  float: left;
+  width: 20%;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+.tracker {
+  padding: 15px;
+  margin: 50px 0 0 30px;
+  position: fixed;
+}
+
+.vline {
+  background: #FFA500;
+  width: 4px;
+  height: 50px;
+  margin-left: 31px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.vline:last-child{
+  margin-bottom: 0px !important;
+}
+
+.dot{
+  background: #FFA500;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-bottom: 30px
+}
+
+.current-section{
+  background: #c00;
+}
+
+#ls1{
+  display: block;
+}
+
+#ls1 .seperator-line{
+  height: 4px;
+  width: 200px;
+  background: #A52A2A;
+  float:left;
+  margin-top: 15px;
+}
+
+#ls1 img{
+  width: 25px;
+  transform: rotate(60deg);
+  margin-left: 5px;
+}
+
+.novosti {
+  min-height: 600px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  
+  .hamburger {
+    padding: 15px;
+    display: block;
+    float: right;
+  }
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+  
+  .navmenu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  
+  .slide-down {
+    height: 300px;
+  }
 }
