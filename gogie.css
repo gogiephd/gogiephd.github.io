@@ -96,10 +96,14 @@ nav li:last-child {
   padding-top: 350px;
   color: #42210b;
   text-align: center;
+  background: url(images/probapozadinskaslika.png);
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
 }
 
 .testnav h3 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -109,7 +113,7 @@ nav li:last-child {
 }
 
 .testbutton{
-  margin-top: 5px;
+  margin-top: 15px;
   background: none;
   border: 1px solid #42210b;
   width: 100px;
@@ -310,10 +314,7 @@ li input{
   }
 
   header{
-    background: url(images/probapozadinskaslika.png);
-    background-size: 135%;
-    background-repeat: no-repeat;
-    background-position: 0% 15%;
+
   }
 
   nav {
