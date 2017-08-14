@@ -1,7 +1,17 @@
+@font-face {
+    font-family: MyCustomFont;
+    src: url('fonts/RobotoSlab-Regular.ttf');
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+* {
+  font-family: MyCustomFont;
 }
 
 html, body {
@@ -15,12 +25,11 @@ html, body {
 }
 
 body {
-  font: 1em 'Roboto', sans-serif;
   color: #555;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(images/banner.png);
-  background-size: 120%;
+  background: url(images/probapozadinskaslika.png);
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -28,24 +37,30 @@ header {
   min-height: 600px;
 }
 
-ul {
+.navmenu {
+  float: right;
   list-style: none;
   max-width: 800px;
   margin: 0 auto;
+  margin-right: 100px;
+  margin-top: 20px;
 }
 
 nav {
-  float: right;
+  width: 100%;
+  position: fixed;
 }
 
 ul a {
   display: block;
   padding: 20px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: #42210b;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 ul a:hover {
@@ -61,17 +76,23 @@ nav li:last-child {
   border-right: none;
 }
 
+#logo {
+  float:left;
+  width: 10%;
+  margin: 20px 0 0 20px;
+}
+
 .tracker {
   padding: 15px;
-  margin: 50px 0 0 30px;
+  margin: 130px 0 0 0;
   position: fixed;
 }
 
 .vline {
-  background: #FFA500;
+  background: #883223;
   width: 4px;
   height: 50px;
-  margin-left: 31px;
+  margin-left: 26px;
   margin-bottom: 30px;
   border-radius: 50%;
 }
@@ -81,43 +102,168 @@ nav li:last-child {
 }
 
 .dot{
-  background: #FFA500;
+  background: #883223;
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-bottom: 30px
 }
 
 .current-section{
-  background: #c00;
+  background: #d14b1c;
 }
 
-#ls1{
+.left_seperator {
   display: block;
+  position: absolute;
+  left: 0;
 }
 
-#ls1 .seperator-line{
+.left_seperator .seperator-line{
   height: 4px;
   width: 200px;
-  background: #A52A2A;
+  background: #883223;
   float:left;
   margin-top: 15px;
 }
 
-#ls1 img{
+.left_seperator img{
   width: 25px;
   transform: rotate(60deg);
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
-.novosti {
-  min-height: 600px;
+.right_seperator {
+  display: block;
+  position: absolute;
+  right: 0;
 }
 
+.right_seperator .seperator-line{
+  height: 4px;
+  width: 200px;
+  background: #883223;
+  margin-top: 15px;
+  float: right;
+}
 
+.right_seperator img{
+  width: 25px;
+  transform: rotate(60deg);
+  margin-right: 15px;
+}
+
+#novosti {
+  margin: 0 40px 0 40px;
+  display:table;
+  text-align: center;
+  color: #883223;
+}
+
+#novosti h3 {
+  font-size: 48px;
+}
+
+#datum {
+  font-size: 12px;
+  float: left;
+  padding-left: 28px;
+}
+
+.kolumna {
+  font-size: 18px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 28px 0 28px;
+}
+
+#column-left {
+  width: 33%;
+  float: left;
+  padding: 20px;
+}
+
+#column-center {
+  display: inline-block;
+  width: 33%;
+  padding: 20px;
+}
+
+#column-right {
+  width: 33%;
+  float: right;
+  padding: 20px;
+}
+
+.coffeemenu {
+  list-style: none;
+  margin: 30px 0 0 20px;
+}
+
+.coffeemenu li {
+  float: left;
+  width: 8%;
+}
+
+li input{
+  display: block;
+  cursor: pointer;
+}
+
+.current-coffee{
+  min-height: 400px;
+}
+
+.coffee-image{
+  float: left;
+  width: 30%;
+  position: relative;
+  left: 150px;
+}
+
+.coffee-desc {
+  float: right;
+  padding: 180px 100px 300px 50px;
+  width: 50%;
+  position: relative;
+  right: 0px;
+}
+
+.transition-left{
+  -webkit-transition: left 0.5s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: left 0.5s ease-out;  /* Firefox 4-15 */
+       -o-transition: left 0.5s ease-out;  /* Opera 10.50–12.00 */
+          transition: left 0.5s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.transition-right{
+
+  -webkit-transition: right 0.5s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: right 0.5s ease-out;  /* Firefox 4-15 */
+       -o-transition: right 0.5s ease-out;  /* Opera 10.50–12.00 */
+          transition: right 0.5s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+}
+
+.slide-left {
+  left: -600px !important;
+}
+
+.slide-right {
+  right: -800px !important;
+}
 
 @media only screen and (max-width: 480px) {
+
+  .tracker{
+    opacity: 0;
+  }
+
+  .vline{
+    opacity: 0;
+  }
   
   .hamburger {
     padding: 15px;
