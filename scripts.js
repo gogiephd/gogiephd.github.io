@@ -15,17 +15,6 @@ $( ".cross").click(function(e){
     $(".hamburger").show();
 });
 
-/*
-$( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-});
-});
-
-$( ".cross" ).click(function() {
-
-});
-});*/
 
 $(window).scroll(function (event){
     var scroll = $(window).scrollTop();
@@ -224,3 +213,7 @@ $('.coffee-to-go').on('click',function(e) {
     });
 });
 
+$('#goright').on('click',function(e) {
+    e.preventDefault();
+    $('.coffeemenu').addClass('menuright');
+});
