@@ -37,6 +37,10 @@ header {
   min-height: 600px;
 }
 
+.hamburger {
+  opacity: 0;
+}
+
 .navmenu {
   float: right;
   list-style: none;
@@ -44,6 +48,7 @@ header {
   margin: 0 auto;
   margin-right: 100px;
   margin-top: 20px;
+  background: none;
 }
 
 nav {
@@ -61,10 +66,11 @@ ul a {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
+  border-top: 1px solid #898989;
 }
 
 ul a:hover {
-  background: #eee;
+  background: rgba(255,255,255,0.3);
 }
 
 nav li {
@@ -264,8 +270,47 @@ li input{
   .vline{
     opacity: 0;
   }
-  
-  .hamburger {
+
+  nav {
+    background: #42210b;
+    position: absolute;
+  }
+
+  .hamburger{
+    background:none;
+    position:absolute;    
+    top:17px;
+    right:20px;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+    opacity: 1;
+  }
+
+  .cross{
+    background:none;
+    position:absolute;
+    top:17px;
+    right:20px;
+    padding:7px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+
+  /*.hamburger {
     padding: 15px;
     display: block;
     float: right;
@@ -276,7 +321,7 @@ li input{
     width: 35px;
     margin-bottom: 6px;
   }
-  
+  */
   .line:last-child {
     margin-bottom: 0;
   }
@@ -289,6 +334,18 @@ li input{
     height: 0;
     overflow: hidden;
     transition: height 0.3s linear;
+    background: #42210b;
+    margin-right: 0px;
+  }
+
+  nav li{
+    width: 100%;
+  }
+
+  ul a{
+    color: #fff;
+    border-bottom: 2px;
+    border-color: #fff;
   }
   
   .slide-down {

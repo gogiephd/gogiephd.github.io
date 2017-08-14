@@ -1,9 +1,31 @@
+$( ".cross" ).hide();
 $('.hamburger').on('click', function(e) {
   // Prevent link from jumping to the top of the page
   e.preventDefault();
   // If menu is already showing, slide it up. Otherwise, slide it down.
-  $('.navmenu').toggleClass('slide-down');
+    $('.navmenu').toggleClass('slide-down');
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
 });
+
+$( ".cross").click(function(e){
+    e.preventDefault();
+    $('.navmenu').toggleClass('slide-down');
+    $(".cross").hide();
+    $(".hamburger").show();
+});
+
+/*
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+});
+});
+
+$( ".cross" ).click(function() {
+
+});
+});*/
 
 $(window).scroll(function (event){
     var scroll = $(window).scrollTop();
@@ -201,3 +223,4 @@ $('.coffee-to-go').on('click',function(e) {
         next();
     });
 });
+
