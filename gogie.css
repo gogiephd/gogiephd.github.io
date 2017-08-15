@@ -246,43 +246,18 @@ nav li:last-child {
   padding: 20px;
 }*/
 
-.hor_nav{
-  padding: 3px;
-}
-
-#goleft{
-  width: 8%;
-  float: left;
-  position: relative;
-  top:52px;
-}
-
-#goright{
-  width: 8%;
-  float: right;
-  position: relative;
-  top:52px;
-}
-
-.menuleft {
-  left: -100px !important;
-}
-
-.menuright {
-  right: -100px !important;
-}
-
 .coffeemenu {
   list-style: none;
+}
+
+.coffeemenu ul{
   margin-top: 30px;
-  overflow:visible;
-  white-space: nowrap;
+  width: 100%;
 }
 
 .coffeemenu li {
-  display: inline-block;
-  width: 20%;
-
+  float: left;
+  width: 25%;
 }
 
 li input{
