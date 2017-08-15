@@ -1,3 +1,12 @@
+$(window).on('load',function() {
+    
+    $("#flexiselCarousel").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 1,            
+    }); 
+    
+});
+
 $( ".cross" ).hide();
 $('.hamburger').on('click', function(e) {
   // Prevent link from jumping to the top of the page
@@ -213,7 +222,4 @@ $('.coffee-to-go').on('click',function(e) {
     });
 });
 
-$('#goright').on('click',function(e) {
-    e.preventDefault();
-    $('.coffeemenu').addClass('menuright');
-});
+
