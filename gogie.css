@@ -251,7 +251,7 @@ nav li:last-child {
 }
 
 .coffeemenu ul{
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -270,16 +270,16 @@ li input{
 
 .coffee-image{
   float: left;
-  width: 30%;
+  width: 50%;
   position: relative;
-  left: 50px;
-  top: 50px;
+  left: 20px;
+  top: 30px;
 }
 
 .coffee-desc {
   float: right;
   padding: 50px 20px 300px 20px;
-  width: 55%;
+  width: 45%;
   position: relative;
   right: 0px;
 }
